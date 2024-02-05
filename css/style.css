@@ -1,0 +1,498 @@
+/*Esto es un comentario*/
+/*
+    Elemento {
+        propiedad: valor;
+    }
+
+*/
+* {
+
+    font-family: 'Exo 2', sans-serif;;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Header */
+
+header {
+    
+    position: sticky;
+    top: 0;
+    background-color: #c5e0f8;
+    
+    
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.div-logo{
+
+    position: absolute;
+
+    top: 1rem;
+    bottom: 2rem;
+    left: 4rem;
+
+}
+
+.img-logo {
+
+    width: 8rem;
+    height: 8rem;
+    
+}
+
+.nombre-empresa {
+
+    font-size: 3.5rem;
+    color: #6558f5;
+    position: relative;
+    left: 14rem;
+}
+
+
+.navegador ul {
+
+    width: 100%;
+    
+
+}
+
+.navegador ul li{
+
+    display: inline;
+    background-color: #ffffff;
+    border: 2px solid #acb4f6;
+    border-radius: 20px;
+    
+    font-size: 1.5rem;
+    margin-right: 5px;
+    text-decoration: unset;
+    text-align: right;
+    
+}
+
+li a{
+
+    color: #6558f5;
+    
+    text-decoration: none;
+
+}
+
+.selected {
+
+    background-color: #6558f5;
+    border: 2px solid #acb4f6;
+    border-radius: 20px;
+    color: #ffffff;
+
+    
+}
+
+/* Main */
+
+.main-index {
+
+    margin: 3rem 11%;
+    height: 400px;
+    background-color: white;
+
+}
+
+.section-main{
+
+
+    background-image: url(../assets/reflejo-hombres-negocios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.pages-information {
+
+    text-align: center;
+    
+
+}
+
+.pages-information h2 {
+
+    font-size: 3rem;
+    font-weight: 900;
+    color: #000000;
+    padding-top: 20px;
+}
+
+.pages-information p {
+
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #000000;
+    padding: 40px 10% 0;
+    
+}
+
+/* Aside */
+
+.index-aside {
+
+    height: 450px;
+    background-color: #d5e7f7;
+    margin: 0 5% 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.aside-section {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.novedades {
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card q {
+
+   width: 300px;
+
+   text-align: center;
+   font-size: 1.25rem;
+   font-weight: 200;
+
+}
+
+.img-card {
+    
+    height: 300px;
+    width: 300px;
+    
+}
+
+
+/* Footer */
+
+
+footer {
+
+    width: 100%;
+    height: 100%;
+    background-color: #92999e;
+
+}
+
+.card-footer {
+
+    width: 30%;
+    
+    display: inline-block;
+    
+}
+
+.logo-del-footer {
+
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.card-footer ul li {
+
+    font-size: 0.7rem;
+
+    
+
+    text-decoration: unset;
+
+}
+
+
+.card-footer a{
+
+    font-size: 0.7rem;
+ 
+}
+
+/* ACA PONEMOS LOS CODIGOS DE LA PAGINA DE SERVICIOS */
+
+.main-servicios {
+
+    margin: 3% 10%;
+
+    height: 600px;
+
+    background-color: #d5e7f7;
+}
+
+
+.img-bloque{
+
+    display: inline;
+
+    width: 250px;
+    height: 250px;
+
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+
+.card-texto {
+
+    width: 1000px;
+
+    display: inline-block;
+
+}
+
+.card-imagen {
+
+    display: inline-block;
+
+    width: 300px;
+
+}
+
+.card-texto h2 {
+
+    font-size: 3rem;
+
+    font-weight: 500;
+
+}
+
+.card-texto p {
+
+    display: inline;
+    
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.section-block-dos {
+
+    text-align: right;
+    
+    height: 50%;
+
+    width: 100%;
+
+}
+
+/* Codigo de la pagina de Productos */
+
+
+.main-productos {
+
+
+    margin: 50px 225px;
+    height: 700px;
+
+}
+
+.section-aside {
+
+    border: 2px solid grey;
+
+}
+.bloque {
+
+    background-color: #d5e7f7;
+
+    width: 450px;
+
+    height: 600px;
+
+    margin: 20px 0 30px 0;
+
+    display: inline-block;
+
+    border: 1px solid #cae5fd;
+
+}
+
+.bloque-del-medio {
+
+    background-color: #ffffff;
+
+    border: 1px solid #c5c5c5;
+
+}
+
+.card-bloque {
+
+    text-align: center;
+
+}
+
+.card-bloque h2{
+
+    font-weight: 500;
+
+}
+
+.card-bloque p {
+
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.img-bloque{
+
+    width: 85%;
+
+    height: 250px;
+
+    margin: 20px;
+
+}
+
+
+/* Codigo de la pagina de administracion */
+
+.main-administracion {
+
+    
+    position: fixed;
+    top: 20;
+
+}
+
+.section-administracion {
+
+    height: 700px;
+
+    border: 2px solid #c8d3dc;
+
+}
+
+.section-administracion ul li {
+
+    margin-top: 20px;
+
+    margin-left: 10px;
+
+}
+
+.aside-administracion {
+
+
+    background-color: #d5e7f7;
+ 
+    margin-top: 20px;
+
+    margin-left: 15px;
+
+    width: 1500px;
+
+    height: 750px;
+}
+
+.img-carnet {
+
+    width: 200px;
+    height: 200px;
+
+    display: inline-block;
+
+    margin-right: 20px;
+}
+
+.datos-personal {
+
+    font-weight: 400;
+
+    font-size: 1.5rem;
+
+    display: inline-block;
+
+}
+
+.footer-administracion {
+
+    width: 300px;
+
+}
+
+
+/* Codigo de la pagina de Iniciar Sesion */
+
+.section-img {
+
+    width: 40%;
+
+    height: 500px;
+
+    margin-top: 30px;
+
+    display: inline;
+
+}
+
+.section-login {
+
+    width: 60%;
+
+    height: 500px;
+
+    background-color: #d5e7f7;
+
+    margin-top: 30px;
+
+    display: inline-block;
+
+}
+
+.img-login {
+
+    width: 600px;
+
+    height: 500px;
+
+    display: inline-block;
+}
+
+.formulario {
+
+    display: inline-block;
+
+}
+
+.box {
+
+
+    display: inline-block;
+    
+
+}

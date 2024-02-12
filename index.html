@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edg"> <!--La compativilidad con los navegadores viejitos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Escala o diseño reponsive-->
 
+    <!--Bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,159 +25,267 @@
 </head>
 <body>
     
-    <!-- Este Seria mi Encabezado : LOGO, TITULO, MENU(botones)-->
+    
     <header>
 
         <div class="div-logo">
-
-            <img class="img-logo" src="./assets/logo.png" alt="logo-principal">
-
-        </div>
-
-
-        <section class="menu">
-
-            <h1 class="nombre-empresa">MOCEP</h1>
-
-            <nav class="navegador">
-
-                <ul>
     
+            <img class="img-logo" src="./assets/logo.png" alt="logo-principal">
+    
+        </div>
+    
+    
+        <section class="menu">
+    
+            <h1 class="nombre-empresa">MOCEP</h1>
+    
+            <nav class="navegador-desktop">
+    
+                <ul>
+        
                     <li><a href="./index.html" class="selected">Inicio</a></li>
                     <li><a href="./pages/servicios.html">Servicios</a></li>
                     <li><a href="./pages/productos.html">Productos</a></li>
                     <li><a href="./pages/administracion.html">Administracion</a></li>
                     <li><a href="./pages/iniciar-sesion.html">Iniciar Sesion</a></li>
-                    
+                        
                 </ul>
-    
+        
             </nav>
-
-        </section>
-
-    </header>
-
-    <!-- Este Seria el espacio del contenido Principal-->    
-
-    <main class="main-index">
-
-        <section class="section-main">
-
-            <div class="pages-information">
-
-                <h2>
-                    Sobre nosotros
-                </h2>
-
-                <p>
-                    Bienvenido a MOCEP, una empresa que trasciende los límites de la excelencia.
-                    Somos lideres el la producion de servicios y podructos destinados a la producion electrica.
-                    Explora con nosotros un mundo de innovación y compromiso, donde cada detalle cuenta y cada 
-                    cliente es nuestra prioridad.
-                </p>
-
-            </div>
-            
-        </section>
-
-    </main>
-
-    <aside class="index-aside">
-
-        <div>
-
-            <h3 class="novedades">
-
-                Novedades
-
-            </h3>
-
-        </div>
-
-
-        <section class="aside-section">
-            
-            
-
-            <div class="card">
-            
-                <img class="img-card" src="./assets/apreton-manos-negocios-corporativos-socios.jpg" alt="img-nuevo-socio">
-            
-                <q>
-                    Es de nuestro agrado comentarles la incorporacion de un nuevo socio
-                </q>
-
-            </div>
-
-            <div class="card">
-
-                <img class="img-card" src="./assets/finanzas.jpg" alt="img-finanzas">
-
-                <q>
-                    Los Numeros por las nuebes" "Este año rompimos el record en ventas
-                </q>
-
-            </div>
-
-            <div class="card">
-
-                <img class="img-card" src="./assets/kit-de-seguridad.jpg" alt="img-seguridad">
-
-                <q>
-                    Este año se implementaran nuevos articulos a nuestro stock. Ven a verlos
-                </q>
-
-            </div>
-
-        </section>
-
-    </aside>
-
-    <!-- Este Seria el espacio del Pie de Pagina-->
-
-    <footer>
-
-        <section class="section-footer">
-
-            <div class="card-footer">
-
-                
-                <h2>MOCEP</h2>
-
-                <img class="logo-del-footer" src="./assets/logo.png" alt="logo-footer">
-
-            </div>
-            
     
-            <div class="card-footer">
-
-                <h4>Contactos</h4>
-
-
-                <ul>
-
-                    <li>Dirección: [Tu dirección]</li>
-                    <li>Teléfono: [Tu número de teléfono]</li>
-                    <li>Correo Electrónico: [Tu dirección de correo electrónico]</li>
-                    <li>Departamentos Específicos:</li>
-                    <li>Síguenos en [Enlaces a tus perfiles de redes sociales]</li>
-                    <li>Servicio al Cliente: [Correo electrónico o número de teléfono para consultas de servicio al cliente]</li>
-
-                </ul>
-
-            </div>
-
-            <div class="card-footer">
-
-                <a href="">Ayuda</a>
-
-            </div>
-
         </section>
 
+        <section class="menu-movil"> 
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary nav-movile">
+                <div class="container-fluid">
+                  <h1>MOCEP</h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/administracion.html">Administracion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./pages/iniciar-sesion.html">Iniciar Sesion</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            
+
+        </section>
+    
+    </header>
+    
+        <!-- Este Seria el espacio del contenido Principal-->    
+        <div class="grid-conteiner">
+
+            <main class="index-main">
+        
+                <div class="pages-information">
+        
+                    <div>
+        
+                        <h2>
+                            Sobre nosotros
+                        </h2>
+            
+                    </div>
+        
+                    <div class="pages-information-desktop">
+                        <p>
+                            Bienvenido a MOCEP, una empresa que trasciende los límites de la excelencia.
+                            Somos lideres el la producion de servicios y podructos destinados a la producion electrica.
+                            Explora con nosotros un mundo de innovación y compromiso, donde cada detalle cuenta y cada 
+                            cliente es nuestra prioridad.
+                        </p>
+                    </div>
+
+                    <div class="pages-information-movile">
+
+                        <p>Bienvenido a MOCEP, Una Empresa Familia</p>
+
+                        <a href="#" class="btn btn-primary">Conocenos</a>
+
+                    </div>
+                    
+        
+                </div>
+                    
+                
+        
+            </main>
+
+            <!-- ASIDE -->
+
+            <aside class="index-aside-desktop">
         
 
-    </footer>
+                <div>
+        
+                    <h3 class="novedades">
+        
+                        Novedades
+        
+                    </h3>
+        
+                </div>
+        
+        
+                <div class="aside-section">
+                    
+                    
+        
+                    <div class="card-section">
+                    
+                        <img class="img-card" src="./assets/apreton-manos-negocios-corporativos-socios.jpg" alt="img-nuevo-socio">
+                    
+                        <q>
+                            Es de nuestro agrado comentarles la incorporacion de un nuevo socio
+                        </q>
+        
+                    </div>
+        
+                    <div class="card-section">
+        
+                        <img class="img-card" src="./assets/finanzas.jpg" alt="img-finanzas">
+        
+                        <q>
+                            Los Numeros por las nuebes" "Este año rompimos el record en ventas
+                        </q>
+        
+                    </div>
+        
+                    <div class="card-section">
+        
+                        <img class="img-card" src="./assets/kit-de-seguridad.jpg" alt="img-seguridad">
+        
+                        <q>
+                            Este año se implementaran nuevos articulos a nuestro stock. Ven a verlos
+                        </q>
+        
+                    </div>
+        
+                </div>
+            
+            </aside>
+
+            <aside class="index-aside-movile carousel slide" id="carouselExampleCaptions">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner img-carrousel">
+                    <div class="carousel-item active">
+                    <img src="./assets/apreton-manos-negocios-corporativos-socios.jpg" class="d-block w-100" alt="img-nuevo-socio">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Third slide label</h6>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item img-carrousel">
+                    <img src="./assets/finanzas.jpg" class="d-block w-100" alt="img-finanzas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Third slide label</h6>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item img-carrousel">
+                    <img src="./assets/kit-de-seguridad.jpg" class="d-block w-100" alt="img-seguridad">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h6>Third slide label</h6>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </aside>
+            
+            <footer class="index-footer">
+    
+                <div class="footer-conteiner">
+        
+                    <div class="div-logo-footer">
+        
+                        <h6>MOCEP</h6>
+                        <img class="img-logo-footer" src="./assets/logo.png" alt="logo-principal">
+            
+                    </div>
+        
+                    <div class="card-contactos">
+                        <h5 class="card-title">¿Queres contactarnos?</h5>
+                        <p class="card-text">Dale Click al boton y contactanos por el medio que mas se acomode a vos</p>
+                        <a href="#" class="btn btn-primary">Ayuda</a>
+                    </div>
+        
+                    <div class="redes-sociales">
+          
+                        <ul class="ul-redes">
+                              
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter li-desktop" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                </svg>
+                                <a href="https://twitter.com/" class="li-desktop">Twitter</a>
+                                
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram li-desktop" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                                <a href="https://www.instagram.com/" class="li-desktop">Instagram</a>
+                                
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook li-desktop" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                                <a href="https://es-la.facebook.com/" class="li-desktop">Facebook</a>
+                                
+                            </li>
+                        
+                        </ul>
+                          
+                    </div>
+        
+                </div>    
+        
+            </footer>
+        
+        </div>
+
+        <!-- Este Seria el espacio del Pie de Pagina--> 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl  +eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

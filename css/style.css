@@ -81,22 +81,6 @@ header {
     
 }
 
-#alert {
-
-
-    display: inline;
-    background-color: #ffffff;
-    border: 2px solid #acb4f6;
-    border-radius: 30px;
-    
-    font-size: 1.2rem;
-    margin-right: 5px;
-    text-decoration: unset;
-    text-align: right;
-
-
-}
-
 .navbar-toggler {
 
     text-align: right;
@@ -595,7 +579,7 @@ footer {
 
     grid-template-columns: repeat(12, 1fr);
 
-    grid-template-rows: repeat(8, 90px);
+    grid-template-rows: repeat(10, 90px);
 
 }
 
@@ -623,9 +607,9 @@ footer {
 
 .section-img {
 
-    grid-row: 2/8;
+    grid-row: 2/10;
 
-    grid-column: 3/8;
+    grid-column: 3/9;
 
     background-image: url(../assets/login.jpg);
     background-repeat: no-repeat;
@@ -638,7 +622,7 @@ footer {
 
 .section-login {
 
-    grid-row: 2/8;
+    grid-row: 2/10;
 
     grid-column: 8/11;
 
@@ -751,7 +735,8 @@ footer {
         grid-template-rows: repeat(10, 80px);
     
         grid-template-columns: repeat(12, 1fr);
-    
+        
+        
         
     }
 
@@ -946,7 +931,7 @@ footer {
     
         grid-template-columns: repeat(12, 1fr);
     
-        grid-template-rows: repeat(8, 90px);
+        grid-template-rows: repeat(10, 90px);
     
     }
 
@@ -959,7 +944,7 @@ footer {
     .section-login{
 
         
-        grid-row: 2/8;
+        grid-row: 2/10;
 
         grid-column: 2/12;
 

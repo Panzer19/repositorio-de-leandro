@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
         
     <title>Servicios</title> <!--LA QUE LE DA EL NOMBRE A LA WEB EN LA PESTAÑA-->
         
@@ -28,7 +30,7 @@
 
         <div class="div-logo">
             
-            <h1>MOCEP</h1>
+            <h1>ConstruMic</h1>
             <img class="img-logo" src="../assets/logo.png" alt="logo-principal">
 
         </div>
@@ -63,71 +65,120 @@
                 </div>
             </nav>
             
-
         </section>
 
     </header>
 
-    <main class="main-servicios">
+    <div class="div-container-servicios">
 
-        <section class="section-block-uno">
+        <main class="main--servicios">
 
-            <div class="card-imagen">
+            <section class="main--servicios__section">
 
-                <img class="img-bloque" src="../assets/silueta-construccion.jpg" alt="img-silueta-construccion">
+                <q>
 
-            </div>
+                    Compromiso Con La Calidad, Con El Cliente y Con La Innovación
+                    
+                </q>
 
-            <div class="card-texto">
+            </section>
 
-                <h2>
-                    Obras
-                </h2>
+        </main>
 
-                <p>
-                    Compromiso con la Calidad: Cada proyecto es ejecutado con los más altos estándares de calidad, desde la planificación hasta la entrega.
-                    Innovación y Diseño: Nos destacamos por nuestra creatividad y enfoque innovador en el diseño, brindando soluciones únicas y atractivas.
-                    Equipo de Expertos: Contamos con un equipo altamente capacitado y experimentado que trabaja incansablemente para hacer realidad tus visiones.
-                </p>
+        <aside class="aside--servicios">
 
-            </div>
-        
-        </section>
-        <section class="section-block-dos">
+            <div class="accordion aside--servicios__container" id="accordionPanelsStayOpenExample">
+                
+                <div class="accordion-item aside--servicios__container-block">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Obras
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
 
-            <div class="card-texto">
+                        <div class="accordion-img">
+                            
+                            <img src="../assets/silueta-construccion.jpg" alt="">
 
-                <h2>
-                    Servicio
-                </h2>
+                        </div>
 
-                <p>
-                    En Mocep, sabemos que el éxito de cualquier construcción va más allá de la fase inicial. 
-                    Nuestro servicio de mantenimiento no solo preserva la calidad de tu obra, sino que también garantiza su rendimiento 
-                    óptimo a lo largo del tiempo.
-                </p>
+                        <div class="accordion-body">
 
-            </div>
+                            <h5> Compromiso con la Calidad: </h5>
 
-            <div class="card-imagen">
+                            <p>
+                                Cada proyecto es ejecutado con los más altos estándares de calidad, desde la planificación hasta la entrega.
+                            </p>
 
-                <img class="img-bloque" src="../assets/obrero.jpg" alt="img-obrero">
+                            <h5> Innovación y Diseño: </h5>
 
+                            <p>  Nos destacamos por nuestra creatividad y enfoque innovador en el diseño, brindando soluciones únicas y atractivas. </p>
+                            
+                            <h5> Equipo de Expertos:  </h5>
+
+                            <p>Contamos con un equipo altamente capacitado y experimentado que trabaja incansablemente para hacer realidad tus visiones.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item aside--servicios__container-block">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Servicio
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+
+                        <div class="accordion-body">
+
+                            <h5>
+                                Servicio
+                            </h5>
+
+                            <p>
+                                En ConstruMic, sabemos que el éxito de cualquier obra va más allá de la fase inicial. 
+                                Nuestro servicio de mantenimiento no solo preserva la calidad de tu obra, sino que también garantiza su rendimiento 
+                                óptimo a lo largo del tiempo.
+                            </p>
+                            
+                        </div>
+
+                        <div class="accordion-img">
+
+                            <img src="../assets/obrero.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item aside--servicios__container-block__none">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
             
-        </section>
-
-    </main>
     
+        </aside>
+
+    </div>
+
     <!-- FOOTER -->
 
-    <footer class="index-footer container-fluid">
+    <footer class="footer container-fluid">
 
-        <div class="row footer-conteiner">
+        <div class="row footer--conteiner">
 
-            <div class="col redes-sociales">
+            <div class="col footer--conteiner-redes redes-sociales">
 
-                <button type="button" class="btn btn-link" >
+                <button type="button" class="btn btn-link">
                     <a href="https://twitter.com/?lang=es"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter li-desktop icono" viewBox="0 0 16 16"> 
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
@@ -154,17 +205,17 @@
 
             </div>
 
-            <div class="col card-contactos">
+            <div class="col footer--conteiner-card card-contactos">
                 <h5 class="card-title">¿Queres contactarnos?</h5>
                 <p class="card-text">Dale Click al boton y contactanos por el medio que mas se acomode a vos</p>
                 <a href="#" class="btn btn-primary" id="boton-footer">Ayuda</a>
             </div>
 
-            <div class="col div-logo-footer">
+            <div class="col footer--conteiner-logo div-logo-footer">
 
-                <h6>MOCEP</h6>
+                <h6>ConstruMic</h6>
                 <img class="img-logo-footer" src="../assets/logo.png" alt="logo-principal">
-
+    
             </div>
 
         </div>    

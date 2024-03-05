@@ -1,0 +1,93 @@
+// ACA VAN TODOS LOS ATRIBUTOS DE HEADER
+
+/*  HEADER  */
+
+header {
+
+    position: sticky;
+    top: 0;
+    background-color: $cool-background;
+    padding-bottom: 5px;
+       
+}
+
+.div-logo {
+
+    h1 {
+
+        position: absolute;
+    
+        top: 1.5rem;
+        left: 12rem;
+        color: $cool-h1;
+        
+    }
+   
+}
+
+.img-logo {
+
+    position: absolute;
+
+    top: 1rem;
+    bottom: 2rem;
+    left: 4rem;
+
+    width: 8rem;
+    height: 8rem;
+    
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    nav {
+
+        background-color: $button-navbar-background;
+        padding: 0;
+
+        div {
+
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background-color: $cool-background;
+        
+            flex-direction: row-reverse;
+            
+            button {
+
+                text-align: right;
+                background-color: $button-navbar-background;
+            
+            }
+        }
+
+    }
+
+}
+
+.navbar-collapse {
+
+    margin: 0;
+    ul {
+        li {
+
+            display: inline;
+            background-color: $button-navbar-background;
+            border: 2px solid #e7e7e7;
+            border-radius: 30px;
+            
+            font-size: 1.2rem;
+            margin-right: 5px;
+            text-decoration: unset;
+            text-align: right;
+   
+        }
+    }
+}
+

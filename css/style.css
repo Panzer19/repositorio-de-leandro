@@ -7,11 +7,13 @@
 */
 * {
 
-    font-family: 'Exo 2', sans-serif;;
+    font-family: 'Exo 2', sans-serif;
     padding: 0;
     margin: 0;
     
 }
+
+
 
 .grid-conteiner {
 
@@ -145,7 +147,7 @@ header {
 
 }
 
-.pages-information {
+.pages--information {
 
     text-align: center;
     display: flex;
@@ -153,13 +155,13 @@ header {
     
 }
 
-.pages-information-movile {
+.pages--information-movile {
 
     display: none;
 
 }
 
-.pages-information h2 {
+.pages--information h2 {
 
     font-size: 3rem;
     font-weight: 600;
@@ -167,7 +169,7 @@ header {
     
 }
 
-.pages-information p {
+.pages--information p {
 
     
     font-weight: 600;
@@ -179,7 +181,7 @@ header {
 
 /* Aside */
 
-.index-aside-desktop {
+.index--aside-desktop {
 
     grid-row: 7/11;
 
@@ -190,7 +192,7 @@ header {
     
 }
 
-.index-aside-movile{
+.index--aside-movile{
 
     display: none;
 
@@ -258,7 +260,7 @@ footer {
 
 }
 
-.index-footer {
+.footer {
 
     grid-row: 12/13;
 
@@ -573,7 +575,7 @@ footer {
 /* Codigo de la pagina de Iniciar Sesion */
 
 
-.main-iniciar-sesion {
+.main--iniciarSesion{
 
     display: grid;
 
@@ -603,9 +605,7 @@ footer {
 
 }
 
-
-
-.section-img {
+.main--iniciarSesion-img {
 
     grid-row: 2/10;
 
@@ -620,7 +620,7 @@ footer {
 
 
 
-.section-login {
+.main--iniciarSesion-login {
 
     grid-row: 2/10;
 
@@ -679,48 +679,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 1500px) {
-   
 
-    .index-aside-desktop {
-
-        display: none;
-        
-    }
-
-    .index-aside-movile {
-
-        display: flex;
-
-        grid-row: 7/11;
-
-        grid-column: 3/11;
-
-    }
-
-    .img-carrousel {
-
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .carousel-control {
-
-        background-color: #62646982;
-        
-        width: 50px;
-    }
-    
-    .p-carrusel {
-
-        color: rgb(255, 255, 255);
-        background-color: #0000008f;
-    }
-
-}
 
 
 /* ----------------------Tablet--------------------------- */
@@ -791,14 +750,11 @@ footer {
         bottom: 1rem;
         left: 3rem;
 
-    }
-
-    .img-logo {
-
         width: 4rem;
         height: 4rem;
-        
+
     }
+
     
     /* -------------------------MAIN---------------------------------- */
 
@@ -815,7 +771,7 @@ footer {
     
     }
 
-    .pages-information-movile {
+    .pages--information-movile {
 
         display: flex;
         flex-direction: column;
@@ -824,7 +780,7 @@ footer {
     }
 
 
-    .pages-information h2 {
+    .pages--information h2 {
 
         font-size: 2.5rem;
         font-weight: 500;
@@ -832,7 +788,7 @@ footer {
 
     }
 
-    .pages-information p {
+    .pages--information p {
 
         font-weight: 400;
         font-size: 1.5rem;
@@ -841,7 +797,7 @@ footer {
 
     }
 
-    .pages-information-desktop {
+    .pages--information-desktop {
 
         display: none;
 
@@ -850,13 +806,13 @@ footer {
     
     /* -----------------------------ASIDE---------------------- */
 
-    .index-aside-desktop {
+    .index--aside-desktop {
 
         display: none;
 
     }
 
-    .index-aside-movile {
+    .index--aside-movile {
 
         display: flex;
 
@@ -1052,13 +1008,13 @@ footer {
 
     }
 
-    .pages-information-desktop {
+    .pages--information-desktop {
 
         display: none;
 
     }
 
-    .pages-information-movile {
+    .pages--information-movile {
 
         display: flex;
         flex-direction: column;
@@ -1066,14 +1022,14 @@ footer {
 
     }
 
-    .pages-information h2{
+    .pages--information h2{
 
         font-size: large;
 
 
     }
 
-    .pages-information-movile p{
+    .pages--information-movile p{
 
         font-size: small;
         margin: 10px 50px 0 50px;
@@ -1093,13 +1049,13 @@ footer {
 
 /* -------------------------ASIDE---------------------- */
 
-    .index-aside-movile {
+    .index--aside-movile {
 
     display: none;
 
     }
 
-    .index-aside-desktop {
+    .index--aside-desktop {
 
         
         display: block;
@@ -1201,8 +1157,6 @@ footer {
 
     }
 
-   
-
 
     /* INICIO DE SESION */
     .main-iniciar-sesion {
@@ -1233,9 +1187,5 @@ footer {
         background-size: cover;
         background-position: center;
     }
-
-    
-
-
 }
 

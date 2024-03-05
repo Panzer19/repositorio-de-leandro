@@ -1,0 +1,66 @@
+
+$proyect-font : 'Exo 2', sans-serif;
+
+
+
+
+
+// COLORES //
+
+$cool-background :  #213a74;
+
+$cool-background-block : #808080;
+
+$button-navbar-background: #ffffff;
+
+$cool-text:#112489;
+
+$cool-h1: white;
+
+
+
+//MIXINS//
+
+@mixin title-h3 {
+
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+
+@mixin title-h3-tablet {
+
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+
+@mixin grid-conteiner {
+
+
+    display: grid;
+
+    grid-template-rows: repeat(8, 100px);
+
+    grid-template-columns: repeat(12, 1fr);
+ 
+}
+
+@mixin grid-conteiner-tablet {
+
+
+    display: grid;
+
+    grid-template-rows: repeat(15, 95px);
+
+    grid-template-columns: repeat(12, 1fr);
+ 
+}
+
+
+
+// MAPS //
+
+
+

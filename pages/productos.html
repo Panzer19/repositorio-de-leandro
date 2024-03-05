@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
         <!--CSS-->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/main.css">
     
         <title>Productos</title> <!--LA QUE LE DA EL NOMBRE A LA WEB EN LA PESTAÑA-->
         
@@ -29,7 +29,7 @@
 
         <div class="div-logo">
             
-            <h1>MOCEP</h1>
+            <h1>ConstruMic</h1>
             <img class="img-logo" src="../assets/logo.png" alt="logo-principal">
 
         </div>
@@ -70,92 +70,115 @@
 
     </header>
 
-    <main class="main-productos">
+    <div class="grid-conteiner-productos">
 
+        <main class="main-productos">
 
+            <div class="main-productos--container">
 
+                <section class="main-productos--container__block" >
 
-        <section class="bloque">
+                    <div class="main-productos--container__block-img">
 
-            <div class="card-bloque">
+                        <img class="img-bloque" src="../assets/herramientas.jpg" alt="img-herramientas">
 
-                <img class="img-bloque" src="../assets/herramientas.jpg" alt="img-herramientas">
+                    </div>                
+        
+                    <div class="main-productos--container__block-text"  id="firt-block">
 
-            </div>
-
-            <div class="card-bloque">
-
-                <h2>Herramientas</h2>
-
-                <p>
-                    Desde destornilladores de precisión hasta sierras de alto rendimiento, nuestro catálogo abarca todo el espectro de 
-                    herramientas esenciales. Descubre la herramienta perfecta para cada tarea, brindando precisión, potencia y confiabilidad.
-                </p>
-
-                <button>Ver catalogo</button>
-
-            </div>
-
-        </section>
-
-        <section class="bloque bloque-del-medio">
-
-            <div class="card-bloque">
-
-                <img class="img-bloque" src="../assets/accesorios.jpg" alt="img-accesorios">
-
-            </div>
-
-            <div class="card-bloque">
-
-                <h2>Accesorios</h2>
-
-                <p>
-                    Desde codos y tes hasta válvulas y conexiones especializadas, nuestro catálogo ofrece una variedad completa de accesorios 
-                    de cañería para satisfacer tus necesidades específicas. Descubre la precisión y la confiabilidad en cada producto.
-                </p>
-
-                <button>Ver catalogo</button>
-
-            </div>
-
-        </section>
-
-        <section class="bloque">
-
-            <div class="card-bloque">
-
-                <img class="img-bloque" src="../assets/indumentaria.jpg" alt="img-indumentaria">
-
-            </div>
-
-            <div class="card-bloque">
-
-                <h2>Indumentaria</h2>
-
-                <p>
-                    Desde overoles y chaquetas hasta calzado de seguridad, nuestro catálogo ofrece opciones 
-                    completas para equipar a tu equipo de trabajo. Descubre la calidad de nuestra empresa lider y la resistencia 
-                    de nuestras prendas que son de diseño unico en el mecado industrial.
-                </p>
-
-                <button>Ver catalogo</button>
-
-            </div>
-
-        </section>
-
-    </main>
+                        <h3>Herramientas</h3>
     
+                        <p class="text-desktop-productos">
+                            Desde destornilladores de precisión hasta sierras de alto rendimiento, nuestro catálogo abarca todo el espectro de 
+                            herramientas esenciales. Descubre la herramienta perfecta para cada tarea, brindando precisión, potencia y confiabilidad.
+                        </p>
+
+                        <div class="text-movile-productos"><p >
+                            Accesorios de cañería precisos y confiables para tus necesidades específicas.
+                        </p></div>
+                        
+        
+                        <button>Ver catalogo</button>
+
+                    </div>
+    
+                    
+
+                </section>
+        
+                <section class="main-productos--container__block "  id="midle-block">
+        
+                    <div class="main-productos--container__block-img">
+
+                        <img class="img-bloque" src="../assets/accesorios.jpg" alt="img-accesorios">  
+                    
+                    </div>
+                    
+                    <div class="main-productos--container__block-text">
+
+                        <h3>Accesorios</h3>
+    
+                        <p class="text-desktop-productos">
+                            Desde codos y tes hasta válvulas y conexiones especializadas, nuestro catálogo ofrece una variedad completa de accesorios 
+                            de cañería para satisfacer tus necesidades específicas. Descubre la precisión y la confiabilidad en cada producto.
+                        </p>
+                        <div class="text-movile-productos">
+                            <p>
+                                Accesorios de cañería precisos y confiables para tus necesidades específicas.
+                            </p>   
+                        </div>
+                        
+        
+                        <button>Ver catalogo</button>
+
+                    </div>
+
+                </section>
+        
+                <section class="main-productos--container__block">
+        
+                    <div class="main-productos--container__block-img">
+                    
+                        <img class="img-bloque" src="../assets/indumentaria.jpg" alt="img-indumentaria">
+
+                    </div>
+        
+                    <div class="main-productos--container__block-text"  id="thr-block">
+
+                        <h3>Indumentaria</h3>
+    
+                        <p class="text-desktop-productos">
+                            Desde overoles y chaquetas hasta calzado de seguridad, nuestro catálogo ofrece opciones 
+                            completas para equipar a tu equipo de trabajo. Descubre la calidad de nuestra empresa lider y la resistencia 
+                            de nuestras prendas que son de diseño unico en el mecado industrial.
+                        </p>
+
+                        <div class="text-movile-productos"><p>
+                            Accesorios de cañería precisos y confiables para tus necesidades específicas.
+                        </p></div>
+                        
+        
+                        <button>Ver catalogo</button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>        
+
     <!-- FOOTER -->
 
-    <footer class="index-footer container-fluid">
+    <footer class="footer container-fluid">
 
-        <div class="row footer-conteiner">
+        <div class="row footer--conteiner">
 
-            <div class="col redes-sociales">
+            <div class="col footer--conteiner-redes redes-sociales">
 
-                <button type="button" class="btn btn-link" >
+                <button type="button" class="btn btn-link">
                     <a href="https://twitter.com/?lang=es"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter li-desktop icono" viewBox="0 0 16 16"> 
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
@@ -182,17 +205,17 @@
 
             </div>
 
-            <div class="col card-contactos">
+            <div class="col footer--conteiner-card card-contactos">
                 <h5 class="card-title">¿Queres contactarnos?</h5>
                 <p class="card-text">Dale Click al boton y contactanos por el medio que mas se acomode a vos</p>
                 <a href="#" class="btn btn-primary" id="boton-footer">Ayuda</a>
             </div>
 
-            <div class="col div-logo-footer">
+            <div class="col footer--conteiner-logo div-logo-footer">
 
-                <h6>MOCEP</h6>
+                <h6>ConstruMic</h6>
                 <img class="img-logo-footer" src="../assets/logo.png" alt="logo-principal">
-
+    
             </div>
 
         </div>    

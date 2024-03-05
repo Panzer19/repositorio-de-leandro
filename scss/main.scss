@@ -1,0 +1,53 @@
+
+
+/**/
+/* Reset */
+
+@import './reset/vars';
+@import './reset/reset';
+@import './reset/layout';
+
+/*<------------------- Pagina -----------------> */
+
+
+@import 'header';
+@import 'footer';
+
+/*--          INDEX          --*/
+
+@import './index/index-main';
+
+
+/*--         Servicios        --*/
+
+@import './servicios/servicios';
+
+/*-- Productos --*/
+
+@import './productos/productos';
+
+/*-- Administracion --*/
+
+@import './administacion/administracion';
+
+/*-- Inicio de Sesion --*/
+
+@import './inicio-sesion/inicio-sesion';
+
+/**/                       /**/
+/*<--- Media Queries --->*/
+/**/                       /**/
+
+/*-Portatil-*/
+
+@import './media-queries/m-portatil';
+
+/*-Tablet-*/
+
+@import './media-queries/m-tablet';
+
+/*-Movile-*/
+
+@import './media-queries/m-movile';
+
+

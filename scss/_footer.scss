@@ -29,7 +29,16 @@
 
                     color: #000000;
 
+                    
+
                 }
+
+                &:hover{
+
+                    transform: scale(1.1);
+
+                }
+            
 
             }
 
@@ -73,6 +82,16 @@
         }
 
     }
+}
+
+#boton-footer {
+
+    background-color: #4f4f4f;
+
+    border-color: #000000;
+
+    color: #000000;
+
 }
 
 

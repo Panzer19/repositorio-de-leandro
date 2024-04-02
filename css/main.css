@@ -17,8 +17,9 @@
 header {
   position: sticky;
   top: 0;
-  background-color: #213a74;
+  background-image: linear-gradient(to right, #0003bd, #019faa);
   padding-bottom: 5px;
+  z-index: 100;
 }
 
 .div-logo h1 {
@@ -45,18 +46,23 @@ header {
   align-items: flex-end;
 }
 .menu nav {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
   padding: 0;
 }
 .menu nav div {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #213a74;
+  background-color: transparent;
   flex-direction: row-reverse;
 }
 .menu nav div button {
   text-align: right;
-  background-color: #ffffff;
+  background-color: transparent;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
 }
 
 .navbar-collapse {
@@ -71,6 +77,10 @@ header {
   margin-right: 5px;
   text-decoration: unset;
   text-align: right;
+}
+.navbar-collapse ul li:hover {
+  transform: scale(1.1);
+  background-color: #bce1f7;
 }
 
 /*--FOOTER--*/
@@ -90,6 +100,9 @@ header {
 }
 .footer--conteiner-redes button a {
   color: #000000;
+}
+.footer--conteiner-redes button:hover {
+  transform: scale(1.1);
 }
 .footer--conteiner-card {
   width: auto;
@@ -112,6 +125,12 @@ header {
   font-size: 2.5rem;
 }
 
+#boton-footer {
+  background-color: #4f4f4f;
+  border-color: #000000;
+  color: #000000;
+}
+
 .img-logo-footer {
   width: 4rem;
   height: 4rem;
@@ -120,8 +139,8 @@ header {
 /*--          INDEX          --*/
 /* MAIN DEL INDEX*/
 .index-main {
-  grid-row: 2/6;
-  grid-column: 2/12;
+  grid-row: 1/6;
+  grid-column: 1/13;
   background-image: url(../assets/reflejo-hombres-negocios.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,16 +157,20 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: rgba(46, 46, 46, 0.4235294118);
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-bottom: 10px;
 }
 .pages--information h2 {
   font-size: 3rem;
   font-weight: 600;
-  color: #050a13;
+  color: white;
 }
 .pages--information-desktop p {
   font-weight: 600;
   font-size: 1.7rem;
-  color: rgb(6, 9, 26);
+  color: white;
   margin: 0 100px;
 }
 
@@ -158,7 +181,7 @@ header {
 .index--aside-desktop {
   grid-row: 7/11;
   grid-column: 3/11;
-  background-color: rgba(177, 190, 233, 0.631372549);
+  background-image: linear-gradient(to left, #c7e2fb, #69b7ff, #517ab7);
 }
 .index--aside-desktop div h3 {
   text-align: center;
@@ -212,6 +235,7 @@ header {
   margin-top: 100px;
   background-color: hsla(0, 0%, 100%, 0.582);
   width: 900px;
+  transition-duration: 3s;
 }
 .main--servicios__section q {
   width: 850px;
@@ -221,7 +245,12 @@ header {
   color: #112489;
 }
 
+.main--servicios__section:hover {
+  transform: scale(1.2) translate(200px, 50px);
+}
+
 .aside--servicios {
+  z-index: 50;
   grid-row: 10/15;
   grid-column: 1/13;
 }
@@ -277,7 +306,7 @@ header {
 }
 
 .accordion-body {
-  background-color: rgba(177, 190, 233, 0.631372549);
+  background-image: linear-gradient(to bottom, #c7e2fb, #517ab7);
   display: flex;
   flex-direction: column;
   width: auto;
@@ -344,6 +373,7 @@ footer {
 .main-productos--container__block-img img {
   width: 300px;
   height: 300px;
+  border: 2px solid black;
 }
 .main-productos--container__block-text {
   display: flex;
@@ -355,9 +385,15 @@ footer {
   color: black;
   font-size: 2rem;
   font-weight: 300;
+  font-weight: 600;
 }
 .main-productos--container__block-text p {
   text-align: center;
+  font-weight: 400;
+}
+.main-productos--container__block-text button {
+  border-radius: 15px;
+  padding: 0px 10px 0 10px;
 }
 
 #midle-block {
@@ -366,20 +402,15 @@ footer {
 }
 
 /*-- Administracion --*/
+#logo-administracion {
+  z-index: 1;
+}
+
 #h1-adm {
   position: absolute;
   top: 1.5rem;
   left: 8rem;
   color: white;
-}
-
-.img-logo-adm {
-  position: absolute;
-  top: 1rem;
-  bottom: 2rem;
-  left: 3rem;
-  width: 5rem;
-  height: 5rem;
 }
 
 .accordion-adm {
@@ -391,7 +422,7 @@ footer {
   left: 0;
   width: 20%;
   height: 100%;
-  background-color: rgba(33, 58, 116, 0.4862745098);
+  background-color: #d3dbf5;
   border: 4px solid #555555;
   border-top: none;
 }
@@ -429,7 +460,7 @@ footer {
   margin-left: 22%;
   margin-top: 40px;
   width: 76%;
-  background-color: #cfd0f0;
+  background-color: #d3dbf5;
 }
 .aside--administracion__section {
   display: flex;
@@ -510,7 +541,7 @@ footer {
 .main--iniciarSesion-login {
   grid-row: 2/10;
   grid-column: 8/11;
-  background-color: #d5e7f7;
+  background-image: linear-gradient(to bottom, #c7e2fb, #517ab7);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -701,14 +732,12 @@ footer {
     flex-direction: row-reverse;
   }
   .menu nav {
-    background-color: #213a74;
     padding: 0;
     display: flex;
   }
   .menu nav div {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: #213a74;
     flex-direction: row-reverse;
   }
   .menu nav div button {
@@ -727,11 +756,14 @@ footer {
     color: #000000;
     border: none;
     border-radius: 0;
-    background-color: #c5e0f8;
+    background-color: transparent;
   }
   .navbar-collapse ul li a {
-    background-color: #213a74;
-    color: white;
+    background-color: #d8ffff;
+    padding-right: 20px;
+    border: 2px solid black;
+    border-radius: 70px;
+    color: black;
   }
   /*--MAIN--*/
   .index-main {
@@ -742,20 +774,28 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .pages--information {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
   .pages--information-movile {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .pages--information-movile a {
+    background-color: #017baf;
+    border-color: black;
+  }
   .pages--information h2 {
     font-size: 2.5rem;
     font-weight: 500;
-    color: #050a13;
   }
   .pages--information p {
     font-weight: 400;
     font-size: 1.5rem;
-    color: rgb(6, 9, 26);
+    color: white;
     margin: 0 50px 10px 50px;
   }
   .pages--information-desktop {
@@ -824,6 +864,12 @@ footer {
     align-items: center;
     flex-direction: column;
     border-radius: 0;
+  }
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
   }
   .accordion-header {
     width: 400px;
@@ -923,8 +969,8 @@ footer {
   }
   /*ADMINISTRACION*/
   .main--administracion {
-    position: fixed;
-    top: 76px;
+    position: relative;
+    top: 0;
     width: 100%;
     height: 0;
     background-color: rgba(33, 58, 116, 0.4862745098);
@@ -936,31 +982,28 @@ footer {
   }
   .accordion-adm {
     display: block;
-    background-color: rgba(33, 58, 116, 0.4862745098);
+    background-color: rgba(0, 0, 0, 0.3411764706);
   }
-  .accordion-item {
+  .accordion--item__adm {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    background-color: rgba(33, 58, 116, 0.4862745098);
+    background-color: transparent;
     width: 100%;
   }
-  .accordion-header-adm {
-    background-color: rgba(33, 58, 116, 0);
-  }
   .accordion-button-adm {
-    background-color: #a1b3ec;
+    background-color: #ffffff;
     width: 50px;
     margin: 5px;
+    margin-right: 15px;
   }
   .accordion-collapse-adm {
-    background-color: rgba(33, 58, 116, 0);
     width: 100%;
   }
   .accordion-collapse-adm ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     width: 100%;
     padding: 0;
     margin-top: 0;
@@ -981,10 +1024,22 @@ footer {
   }
   .accordion-collapse-adm ul li form label {
     margin-bottom: 10px;
-    color: white;
+    color: black;
+    text-align: center;
   }
   .accordion-collapse-adm ul li form input {
     width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .accordion-collapse-adm ul li form button {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
   }
   .aside--administracion {
     margin-left: 15px;
@@ -1060,12 +1115,12 @@ footer {
   }
   .div-logo h1 {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     left: 3rem;
     font-size: 1rem;
   }
   .img-logo {
-    top: 0.5rem;
+    top: 0.8rem;
     left: 0.5rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -1080,25 +1135,22 @@ footer {
     flex-direction: row-reverse;
   }
   .menu nav {
-    background-color: #213a74;
     padding: 0;
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
   }
   .menu nav div {
-    background-color: #213a74;
+    padding-top: 1rem;
     flex-direction: row-reverse;
   }
   .menu nav div button {
     text-align: right;
-    width: 1rem;
-    height: 1rem;
+    border: none;
+    height: 1.2rem;
     margin-bottom: 10px;
     padding: 0;
   }
   .navbar-toggler-icon {
-    width: 1rem;
+    width: 1.2rem;
     height: 1rem;
     margin-bottom: 10px;
   }
@@ -1115,11 +1167,14 @@ footer {
     color: #000000;
     border: none;
     border-radius: 0;
-    background-color: #c5e0f8;
+    background-color: transparent;
   }
   .navbar-collapse ul li a {
-    background-color: #213a74;
-    color: white;
+    background-color: #d8ffff;
+    padding-right: 20px;
+    border: 2px solid black;
+    border-radius: 70px;
+    color: black;
   }
   /* -----------------------MAIN--------------------------------- */
   .index-main {
@@ -1130,6 +1185,11 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .pages--information {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
   .pages--information-desktop {
     display: none;
   }
@@ -1138,12 +1198,17 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .pages--information-movile a {
+    background-color: #017baf;
+    border-color: black;
+  }
   .pages--information h2 {
     font-size: large;
   }
   .pages--information-movile p {
     font-size: small;
     margin: 10px 50px 0 50px;
+    color: white;
   }
   #boton-conocenos {
     margin-top: 15px;
@@ -1345,13 +1410,14 @@ footer {
   }
   #firt-block {
     background-image: url(../../assets/herramientas.jpg);
-  }
-  #midle-block {
-    background-image: url(../../assets/accesorios.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
+  }
+  #midle-block {
+    background-image: url(../../assets/accesorios.jpg);
+    background-size: cover;
   }
   #thr-block {
     background-image: url(../../assets/indumentaria.jpg);
@@ -1367,17 +1433,9 @@ footer {
     left: 6rem;
     color: white;
   }
-  .img-logo-adm {
-    position: absolute;
-    top: 1rem;
-    bottom: 2rem;
-    left: 3rem;
-    width: 3rem;
-    height: 3rem;
-  }
   .main--administracion {
-    position: fixed;
-    top: 60px;
+    position: relative;
+    top: 0;
     width: 100%;
     height: 0;
     background-color: rgba(33, 58, 116, 0.4862745098);
@@ -1389,20 +1447,21 @@ footer {
   }
   .accordion-adm {
     display: block;
-    background-color: rgba(33, 58, 116, 0.4862745098);
+    background-color: rgba(0, 0, 0, 0.3411764706);
   }
-  .accordion-item {
+  .accordion-item-amd {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    background-color: rgba(33, 58, 116, 0.4862745098);
+    background-color: transparent;
     width: 100%;
   }
   .accordion-header-adm {
     background-color: rgba(33, 58, 116, 0);
+    text-align: right;
   }
   .accordion-button-adm {
-    background-color: #213a74;
+    background-color: #ffffff;
     width: 30px;
     margin: 5px;
     border-radius: 40%;
@@ -1423,8 +1482,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 15px;
-    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
     width: 150px;
     text-decoration: unset;
     border-right: 2px solid white;
@@ -1435,19 +1494,29 @@ footer {
     flex-direction: column;
     align-items: stretch;
     flex-wrap: nowrap;
+    margin-right: 5px;
   }
   .accordion-collapse-adm ul li form label {
     margin-bottom: 10px;
-    color: white;
+    color: black;
     font-size: 0.8rem;
+    text-align: right;
   }
   .accordion-collapse-adm ul li form input {
     width: 120px;
     height: 20px;
+    font-size: 0.6rem;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 5px;
   }
   .accordion-collapse-adm ul li form button {
     width: 120px;
     height: 20px;
+    font-size: 0.6rem;
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 5px;
   }
   .aside--administracion {
     margin-left: 15px;
@@ -1518,6 +1587,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 2px solid rgba(0, 0, 255, 0.37);
   }
 }
 

@@ -4,9 +4,9 @@
 
 .index-main {
 
-    grid-row: 2/6;
+    grid-row: 1/6;
 
-    grid-column: 2/12;
+    grid-column: 1/13;
 
     background-image: url(../assets/reflejo-hombres-negocios.jpg);
     
@@ -30,11 +30,18 @@
     display: flex;
     flex-direction: column;
     
+    background-color: #2e2e2e6c;
+
+    margin-left: 150px;
+    margin-right: 150px;
+
+    padding-bottom: 10px;
+
     h2 {
 
         font-size: 3rem;
         font-weight: 600;
-        color: #050a13;
+        color: white;
         
     }
 
@@ -45,8 +52,10 @@
     
             font-weight: 600;
             font-size: 1.7rem;
-            color: rgb(6, 9, 26);
+            color: white;
             margin: 0 100px;
+
+           
         
         }
 
@@ -63,13 +72,16 @@
         display: none;
     }
 
+    
+
     &-desktop {
 
         grid-row: 7/11;
     
         grid-column: 3/11;
     
-        background-color: #b1bee9a1;
+        background-image: linear-gradient(to left, #c7e2fb,  #69b7ff , #517ab7);
+    
         
 
         div{

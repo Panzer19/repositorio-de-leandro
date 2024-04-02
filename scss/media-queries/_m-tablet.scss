@@ -44,8 +44,7 @@
 
         width: 4rem;
         height: 4rem;
-        
-        
+    
     }
     
     .menu {
@@ -55,7 +54,6 @@
 
         nav {
     
-            background-color: $cool-background;
             padding: 0;
             display: flex;
 
@@ -63,7 +61,6 @@
     
                 padding-top: 0.5rem;
                 padding-bottom: 0.5rem;
-                background-color: $cool-background;
             
                 flex-direction: row-reverse;
                 
@@ -95,12 +92,16 @@
                 color: #000000;
                 border: none;
                 border-radius: 0;
-                background-color: #c5e0f8;
+                background-color: $cool-trsparente;
  
                 a{
 
-                    background-color:$cool-background;
-                    color: white;
+                    background-color: #d8ffff;
+
+                    padding-right: 20px;
+                    border: 2px solid black;
+                    border-radius: 70px;
+                    color: black;
 
                 }
             }
@@ -126,11 +127,29 @@
     
     }
 
+
+    .pages--information{
+
+        margin-left: 0;
+        margin-right: 0;
+
+        padding-bottom: 0;
+
+    }
+
     .pages--information-movile {
 
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        a {
+
+            background-color: #017baf;
+
+            border-color: black;
+
+        }
 
     }
 
@@ -139,7 +158,7 @@
 
         font-size: 2.5rem;
         font-weight: 500;
-        color: #050a13;
+        
 
     }
 
@@ -147,7 +166,7 @@
 
         font-weight: 400;
         font-size: 1.5rem;
-        color: rgb(6, 9, 26);
+        color: white;
         margin: 0 50px 10px 50px;
 
     }
@@ -281,6 +300,15 @@
 
             }
         }  
+    }
+
+    .accordion-item {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        width: 100%;
     }
 
     .accordion-header {
@@ -445,9 +473,9 @@
 
     .main--administracion {
 
-        position: fixed;
+        position: relative;
         
-        top: 76px;
+        top: 0;
         width: 100%;
 
         height: 0;
@@ -456,13 +484,11 @@
     
         border: none;
         border-top: none;
-    
+
         &__section {
             
             display: none;
             
-            
-    
         }
     
     }
@@ -470,44 +496,42 @@
     .accordion-adm{
 
         display: block;
-        background-color: #213a747c; 
+        background-color: #00000057; 
+
     }
 
 
-    .accordion-item {
+    .accordion--item__adm {
 
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
-        background-color: #213a747c; 
+        background-color: $cool-trsparente; 
         width: 100%;
 
     }
-    .accordion-header-adm {
-
-        background-color: #213a7400;
-        
-    }
+    
 
     .accordion-button-adm {
 
-        background-color: #a1b3ec;
+        background-color: #ffffff;
         width: 50px;
         margin: 5px;
+        margin-right: 15px;
     
     }
 
     
     .accordion-collapse-adm {
 
-        background-color: rgba(33, 58, 116, 0);
+        
         width: 100%;
 
         ul {
 
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
+            justify-content: space-evenly;
             width: 100%;
             padding: 0;
             margin-top: 0;
@@ -532,14 +556,27 @@
                     label {
 
                         margin-bottom: 10px;
-                        color: white;
-                        
-
+                        color: black;
+                        text-align: center;
+            
                     }
 
                     input {
 
                         width: 150px;
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        text-align: center;
+                        margin-left: 10px;
+                    }
+
+                    button {
+
+                        width: 150px;
+                        border: 1px solid black;
+                        border-radius: 5px;
+                        text-align: center;
+                        margin-left: 10px;
 
                     }
 

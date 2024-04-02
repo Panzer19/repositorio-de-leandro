@@ -25,7 +25,7 @@
     
             position: absolute;
 
-            top: 1rem;
+            top: 1.5rem;
             left: 3rem;
             font-size: 1rem;
             
@@ -35,7 +35,7 @@
 
     .img-logo{
 
-        top: 0.5rem;
+        top: 0.8rem;
         left: 0.5rem;
         width: 2.5rem;
         height: 2.5rem;
@@ -56,26 +56,22 @@
 
         nav {
     
-            background-color: $cool-background;
+            
             padding: 0;
             display: flex;
-            width: 2.5rem;
-            height: 2.5rem;
+            
 
             div {
     
+                padding-top: 1rem;
                 
-                background-color: $cool-background;
-            
                 flex-direction: row-reverse;
 
-                
-                
                 button {
     
                     text-align: right;
-                    width: 1rem;
-                    height: 1rem;
+                    border: none;
+                    height: 1.2rem;
                     margin-bottom: 10px;
                     padding: 0;
                     
@@ -88,7 +84,8 @@
     
     .navbar-toggler-icon {
 
-        width: 1rem;
+        width: 1.2rem;
+
         height: 1rem;
         
         margin-bottom: 10px;
@@ -112,13 +109,15 @@
                 color: #000000;
                 border: none;
                 border-radius: 0;
-                background-color: #c5e0f8;
+                background-color: $cool-trsparente;
  
                 a{
 
-                    background-color:$cool-background;
-                    color: white;
-
+                    background-color: #d8ffff;
+                    padding-right: 20px;
+                    border: 2px solid black;
+                    border-radius: 70px;
+                    color: black;
                 }
             }
         }
@@ -142,6 +141,15 @@
 
     }
 
+    .pages--information{
+
+        margin-left: 0;
+        margin-right: 0;
+
+        padding-bottom: 0;
+
+    }
+
     .pages--information-desktop {
 
         display: none;
@@ -153,6 +161,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        a {
+
+            background-color: #017baf;
+
+            border-color: black;
+
+        }
 
     }
 
@@ -167,6 +183,7 @@
 
         font-size: small;
         margin: 10px 50px 0 50px;
+        color: white;
 
     }
 
@@ -465,6 +482,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
+                
             
                 &-img{   
 
@@ -526,17 +544,18 @@
 
         
         background-image: url(../../assets/herramientas.jpg);
-        
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+
     }
 
     #midle-block {
 
         
         background-image: url(../../assets/accesorios.jpg);
-        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        align-items: center;
         
     }
 
@@ -565,23 +584,12 @@
     
     }
 
-    .img-logo-adm {
-
-        position: absolute;
-
-        top: 1rem;
-        bottom: 2rem;
-        left: 3rem;
-
-        width: 3rem;
-        height: 3rem;
-
-    }
+    
 
     .main--administracion {
 
-        position: fixed;
-        top: 60px;
+        position: relative;
+        top: 0;
         width: 100%;
         height: 0;
         background-color: #213a747c;
@@ -597,28 +605,29 @@
     .accordion-adm{
 
         display: block;
-        background-color: #213a747c; 
+        background-color: #00000057; 
     }
 
 
-    .accordion-item {
+    .accordion-item-amd {
 
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
-        background-color: #213a747c; 
+        background-color: $cool-trsparente; 
         width: 100%;
 
     }
     .accordion-header-adm {
 
         background-color: #213a7400;
-        
+        text-align: right;
+
     }
 
     .accordion-button-adm {
 
-        background-color: $cool-background;
+        background-color: #ffffff;
         width: 30px;
         margin: 5px;
         border-radius: 40%;
@@ -647,8 +656,8 @@
                 flex-direction: column;
                 align-items: flex-end;
 
-                margin-top: 15px;
-                margin-left: 5px;
+                margin-bottom: 15px;
+                margin-right: 5px;
                 width: 150px;
                 text-decoration: unset;
                 border-right: 2px solid white;
@@ -660,24 +669,34 @@
                     flex-direction: column;
                     align-items: stretch;
                     flex-wrap: nowrap;
+                    margin-right: 5px;
 
                     label {
 
                         margin-bottom: 10px;
-                        color: white;
+                        color: black;
                         font-size: 0.8rem;
+                        text-align: right;
                     }
 
                     input {
 
                         width: 120px;
                         height: 20px;
+                        font-size: 0.6rem;
+                        text-align: right;
+                        border: 1px solid black;
+                        border-radius: 5px;
                     }
 
                     button {
 
                         width: 120px;
                         height: 20px;
+                        font-size: 0.6rem;
+                        text-align: right;
+                        border: 1px solid black;
+                        border-radius: 5px;
                     
                     }
 
@@ -804,6 +823,8 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+
+            border: 2px solid rgba(0, 0, 255, 0.37);
         }
 
     }

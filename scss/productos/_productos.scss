@@ -49,6 +49,10 @@
                     width: 300px;
     
                     height: 300px;
+
+                    border: 2px solid black;
+
+                    
     
                 }
     
@@ -66,13 +70,23 @@
 
                     color: black;
                     @include title-h3-tablet ;
-
+                    font-weight: 600;
 
                 }
 
                 p {
 
                     text-align: center;
+                    
+                    font-weight: 400;
+
+                }
+
+                button {
+
+                    border-radius: 15px;
+
+                    padding: 0px 10px 0 10px;
 
                 }
                 

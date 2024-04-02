@@ -2,12 +2,16 @@
 
 /*  HEADER  */
 
+
+
 header {
 
     position: sticky;
     top: 0;
-    background-color: $cool-background;
+    background-image: linear-gradient(to right, #0003bd, #019faa);
     padding-bottom: 5px;
+
+    z-index: 100;
        
 }
 
@@ -36,6 +40,7 @@ header {
     width: 8rem;
     height: 8rem;
     
+    
 }
 
 .menu {
@@ -48,26 +53,33 @@ header {
 
     nav {
 
-        background-color: $button-navbar-background;
+        background-color: #ffffff00;
         padding: 0;
 
         div {
 
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
-            background-color: $cool-background;
+            background-color: transparent;
         
             flex-direction: row-reverse;
             
             button {
 
                 text-align: right;
-                background-color: $button-navbar-background;
+                background-color: transparent;
             
             }
         }
 
     }
+
+}
+
+.bg-body-tertiary {
+
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
 
 }
 
@@ -86,6 +98,14 @@ header {
             margin-right: 5px;
             text-decoration: unset;
             text-align: right;
+
+            &:hover {
+
+                transform: scale(1.1);
+
+                background-color: #bce1f7;
+
+            }
    
         }
     }
